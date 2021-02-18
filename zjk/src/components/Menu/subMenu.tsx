@@ -1,4 +1,4 @@
-import React, {useContext, FunctionComponentElement, FunctionComponent, useState} from 'react'
+import React, {useContext, FunctionComponentElement, useState} from 'react'
 import classNames from 'classnames'
 import {MenuContext} from './menu'
 import {MenuItemProps} from './menuItem'
@@ -48,7 +48,7 @@ const SubMenu: React.FC<SubmenuProps> = ({index, title, children, className}) =>
           index: `${index}-${i}`
         })
       } else {
-        console.error('Warning: Menu has a child which is not a MenuItem Component')
+        console.error('Warning: SubMenu has a child which is not a MenuItem Component')
       }
     })
     return (

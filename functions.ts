@@ -17,7 +17,7 @@ const add = function add(x: number, y: number, z?: number, d: number = 10): numb
     return x + y + d
   }
 }
-let result = add(2,3)
+let res = add(2,3)
 
 // 函数类型
 let add2: (x: number, y: number, z?: number) => number = add

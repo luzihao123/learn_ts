@@ -1,6 +1,10 @@
 .alert {
-  margin-bottom: 1rem;
-  position: relative;
+  margin:0 auto 1rem ;
+  position: absolute;
+  left: 0;
+  right: 0;
+  width: 400px;
+  
   padding: 15px;
   .description{
     font-size: $font-size-sm;
@@ -17,4 +21,14 @@
 }
 .alert-success {
   @include alert-style($primary, $primary, $white)
+}
+.alert-defalut {
+  @include alert-style($white, $white, $primary)
+}
+
+.alert-danger {
+  @include alert-style($danger, $danger, $white)
+}
+.alert-warning {
+  @include alert-style($warning, $warning, $white)
 }

@@ -1,0 +1,28 @@
+.viking-tabs {
+    display: flex;
+    height: 500px;
+    position: relative;
+    .tab-item {
+        width: 100px;
+        height: 40px;
+        line-height: 40px;
+        text-align: center;
+        &.is-active {
+            border-bottom: 1px solid $primary;
+        }
+        &.is-disabled {
+
+        }
+    }
+    .tab-context {
+        display: none;
+        position: absolute;
+        top: 40px;
+        left: 0;
+        padding: 2px 20px;
+        &.is-show {
+            display: block;
+        }
+    }
+    
+}

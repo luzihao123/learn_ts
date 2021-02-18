@@ -35,9 +35,10 @@
 @mixin alert-style (
   $background,
   $border,
-  $color
+  $color,
 ) {
   color: $color;
   background: $background;
   border-color: $border;
+  border-radius: $border-radius;
 }
